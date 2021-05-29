@@ -10,23 +10,40 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "ra-i18n-polyglot": "^3.15.2",
+    "ra-language-dutch": "^3.15.1",
     "react": "^17.0.2",
+    "react-admin": "^3.15.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "typescript": "^4.1.2",
     "web-vitals": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/react-router-dom": "^5.1.7",
+    "prettier": "^2.3.0",
+    "prettier-plugin-import-sort": "^0.0.6",
+    "import-sort-style-module": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier -c '{**/*.{ts, tsx,js,jsx,scss,md},public/**/*.html}'",
+    "prettier-fix": "prettier --write '{**/*.{ts,tsx,js,jsx,scss,md},public/**/*.html}'"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "importSort": {
+    ".js, .jsx, .ts, .tsx": {
+      "style": "module"
+    }
   },
   "browserslist": {
     "production": [
