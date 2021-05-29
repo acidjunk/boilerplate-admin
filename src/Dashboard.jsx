@@ -8,12 +8,8 @@ const Dashboard = () => {
 
     return (
         <TabbedShowLayout syncWithLocation={false}>
-            <Tab label="Users">
-                Todo: show users
-            </Tab>
-            <Tab label="Permissions">
-                Todo: show permissions
-            </Tab>
+            <Tab label="Users">Todo: show users</Tab>
+            <Tab label="Permissions">Todo: show permissions</Tab>
         </TabbedShowLayout>
     );
 };
